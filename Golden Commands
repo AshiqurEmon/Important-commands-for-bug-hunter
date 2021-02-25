@@ -1,0 +1,3 @@
+Looking to quickly dump URLs from a webpage using curl and some regex magic!? Try: 
+
+curl -s https://www.url[.]com | pcregrep -o "(http:\/\/|https:\/\/).*?(?=\"|'| )" | sort -u
